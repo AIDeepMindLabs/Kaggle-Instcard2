@@ -6,7 +6,7 @@
        
 class Config(object):
     def __init__(self, config):   
-        self.cuda = config['cuda'] # 是否使用GPU，bool
+        self.cuda = config['cuda'] # GPU，bool
         self.clip = config['clip']
         self.epochs = config['epochs']
         self.batch_size = config['batch_size']
@@ -19,6 +19,6 @@ class Config(object):
         self.rnn_type = config['rnn_type']
         self.rnn_layer_num = config['rnn_layers']
         self.dropout = config['dropout']
-        self.num_product = config['num_product'] # 商品数目，用于定义Embedding Layer
-        self.embedding_dim = config['embedding_dim'] # 商品表述维数， 用于定义Embedding Layer
+        self.num_product = config['num_product'] #Embedding Layer
+        self.embedding_dim = config['embedding_dim'] #Embedding Layer
         self.checkpoint_dir = config['checkpoint_dir']
